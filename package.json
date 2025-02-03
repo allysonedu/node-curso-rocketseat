@@ -16,7 +16,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node --import tsx ./node_modules/.bin/knex"
+    "knex": "node --import tsx ./node_modules/.bin/knex",
+    "create:table": "knex -- migrate:make",
+    "run:table": "knex -- migrate:latest"
   },
   "keywords": [],
   "author": "",
